@@ -7,10 +7,13 @@ src/BMI.egg-info/SOURCES.txt
 src/BMI.egg-info/dependency_links.txt
 src/BMI.egg-info/top_level.txt
 src/BMI/components/__init__.py
+src/BMI/components/data_ingestion.py
 src/BMI/config/__init__.py
 src/BMI/config/configuration.py
 src/BMI/constants/__init__.py
 src/BMI/entity/__init__.py
+src/BMI/entity/config_entity.py
+src/BMI/pipeline/Stage_1.py
 src/BMI/pipeline/__init__.py
 src/BMI/utils/__init__.py
 src/BMI/utils/common.py
