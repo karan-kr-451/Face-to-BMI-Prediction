@@ -3,12 +3,21 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://drive.google.com/file/d/1phnqsHhPNX6N5B2uaRmFF7Gs735cE0Df/view?usp=sharing
+  source_URL: https://drive.google.com/file/d/1qNvJq8JQqPt-f9wHvoBnYdOG7jv3Wezw/view?usp=sharing
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 
+data_validation:
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["images", "metadata.yaml"]
 
 prepare_base_model:
   root_dir: artifacts/prepare_base_model
   base_model_path: artifacts/prepare_base_model/base_model.h5
   updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
+
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/model.h5
