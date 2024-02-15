@@ -9,7 +9,7 @@ __version__ = "0.0.0"
 REPO_NAME = "Face-to-BMI-Prediction"
 AUTHOR_USER_NAME = "karan-kr-451"
 SRC_REPO = "BMI"
-AUTHOR_EMAIL = "karankum451@gmail.com"
+AUTHOR_EMAIL = "karankum451.com"
 
 
 setuptools.setup(

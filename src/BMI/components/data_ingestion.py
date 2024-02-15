@@ -3,7 +3,8 @@ import zipfile
 import gdown
 from BMI import logger
 from BMI.utils.common import get_size
-from BMI.entity.config_entity import DataIngestionConfig
+from BMI.entity.config_entity import (DataIngestionConfig)
+
 
 
 class DataIngestion:
@@ -43,3 +44,4 @@ class DataIngestion:
         os.makedirs(unzip_path, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
             zip_ref.extractall(unzip_path)
+

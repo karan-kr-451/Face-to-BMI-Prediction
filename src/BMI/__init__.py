@@ -19,4 +19,4 @@ logging.basicConfig(
     ]
 )
 
-logger = logging.getLogger("BmiLogger")
+logger = logging.getLogger("cnnClassifierLogger")

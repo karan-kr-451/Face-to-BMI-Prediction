@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List
+
 
 @dataclass(frozen=True)
 class DataIngestionConfig:
@@ -10,17 +10,40 @@ class DataIngestionConfig:
     unzip_dir: Path
 
 
+
 @dataclass(frozen=True)
 class PrepareBaseModelConfig:
     root_dir: Path
-    root_dir: Path
     base_model_path: Path
     updated_base_model_path: Path
-    params_augmentation: bool
-    params_image_size: List[int]
-    params_batch_size: int
-    params_include_top: bool
-    params_epochs: int
-    params_output_variables: List[dict]
-    params_weights: str
+    params_image_size: list
     params_learning_rate: float
+    params_include_top: bool
+    params_weights: str
+    params_classes: int
+
+
+
+@dataclass(frozen=True)
+class TrainingConfig:
+    root_dir: Path
+    trained_model_path: Path
+    Image_data_file: Path
+    updated_base_model_path: Path
+    training_data: Path
+    params_epochs: int
+    params_batch_size: int
+    params_is_augmentation: bool
+    params_image_size: list
+
+
+
+@dataclass(frozen=True)
+class EvaluationConfig:
+    path_of_model: Path
+    training_data: Path
+    Image_data_file: Path
+    all_params: dict
+    mlflow_uri: str
+    params_image_size: list
+    params_batch_size: int

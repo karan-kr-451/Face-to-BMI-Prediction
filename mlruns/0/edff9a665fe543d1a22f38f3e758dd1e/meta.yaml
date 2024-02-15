@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/project/Face-to-BMI-Prediction/mlruns/0/edff9a665fe543d1a22f38f3e758dd1e/artifacts
+end_time: 1707942861336
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: edff9a665fe543d1a22f38f3e758dd1e
+run_name: gaudy-kite-73
+run_uuid: edff9a665fe543d1a22f38f3e758dd1e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707942845429
+status: 3
+tags: []
+user_id: asus
